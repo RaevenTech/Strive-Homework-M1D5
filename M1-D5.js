@@ -44,7 +44,7 @@ console.log(crazySum(2, 2))
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-function crazydiff(x) {
+const crazydiff = function (x) {
     if (x > 19) {
         return Math.abs(x - 19) * 3
     } else {
@@ -59,7 +59,16 @@ console.log(crazydiff(18))
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const boundry = function (n) {
+    if ((n > 20 && n <= 100) || n === 400) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(boundry(400))
+console.log(boundry(45))
+console.log(boundry(250))
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
@@ -100,5 +109,4 @@ console.log(crazydiff(18))
 /* WRITE YOUR ANSWER HERE */
 
 /* WHEN YOU ARE FINISHED
- Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
-*/
+ Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow. */
