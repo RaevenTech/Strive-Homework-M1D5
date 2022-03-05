@@ -87,7 +87,7 @@ function strivify(str) {
     }
 
 }
-console.log(strivify("front-end is cool"))
+console.log(strivify("javaScript is cool"))
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
