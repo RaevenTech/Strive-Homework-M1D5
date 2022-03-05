@@ -30,19 +30,21 @@ console.log(area)
 
 
 function crazySum(int1, int2) {
-    let sum = 12 + 11
-    return sum
-
+    if (int1 === int2) {
+        return (int1 + int2) * 3
+    } else {
+        return int1 + int2
+    }
 }
-let result = crazySum(12, 11)
-console.log(result)
+console.log(crazySum(2, 2))
+
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
