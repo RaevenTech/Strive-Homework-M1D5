@@ -118,7 +118,17 @@ console.log(reverseString("Hello world"))
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let upperFirst = function (words) {
+    let eachWord = words.toLowerCase().split(" ")
+
+    for (let i = 0; i < eachWord.lenth; i++) {
+        eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substring(1)
+    }
+
+    return eachWord.join(" ")
+}
+console.log(upperFirst("hello my name in raeven"))
+
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
