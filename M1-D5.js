@@ -109,7 +109,10 @@ console.log(check3and7(13))
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+function reverseString(str) {
+    return str.split("").reverse().join("")
+}
+console.log(reverseString("Hello world"))
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
