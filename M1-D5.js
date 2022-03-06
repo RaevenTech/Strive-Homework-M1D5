@@ -151,10 +151,12 @@ console.log(cutString("hello world"))
 function giveMeRandom(n) {
     let numArr = []
     for (let i = 0; i <= n; i++) {
-        let randomArr = Math.floor(Math.random())
-
+        let randomArr = Math.floor(Math.random() * 10)
+        numArr.push(randomArr)
     }
+    return numArr
 }
+console.log(giveMeRandom(9))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow. */
