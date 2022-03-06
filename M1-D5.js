@@ -93,8 +93,17 @@ console.log(strivify("javaScript is cool"))
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
+function check3and7(n) {
+    if (n % 3 === 0 || n % 7 === 0) {
+        return "Is a multiple of 3 and 7", true
+    } else {
+        return "Is not a multiple of 3 or 7", false
+    }
 
-
+}
+console.log(check3and7(15))
+console.log(check3and7(14))
+console.log(check3and7(13))
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
