@@ -118,16 +118,21 @@ console.log(reverseString("Hello world"))
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-let upperFirst = function (words) {
-    let eachWord = words.toLowerCase().split(" ")
-
-    for (let i = 0; i < eachWord.lenth; i++) {
-        eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substring(1)
+const upperFirstPhrase = function (str) { //phrase as param
+    let words = str.split(" ")
+    let finalString = []
+    for (let i = 0; i < words.length; i++) {
+        let firstChar = words[i].charAt(0)
+        console.log(firstChar)
+        let uppercaseChar = firstChar.toUpperCase()
+        let cutString = words[i].slice(1)
+        let finalWord = uppercaseChar + cutString
+        finalString.push(finalWord)
     }
-
-    return eachWord.join(" ")
+    console.log(finalString.join(" "))
 }
-console.log(upperFirst("hello my name in raeven"))
+
+upperFirstPhrase("hello my name is raeven")
 
 
 /* EXERCISE 9
