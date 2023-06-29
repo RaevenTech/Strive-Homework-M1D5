@@ -20,7 +20,7 @@ function calculateArea(firstNumber, secondNumber) {
 
 area = calculateArea(11, 12)
 
-console.log(area)
+//console.log(area)
 
 
 /* EXERCISE 2
@@ -28,15 +28,27 @@ console.log(area)
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-
-function crazySum(int1, int2) {
-    if (int1 === int2) {
-        return (int1 + int2) * 3
-    } else {
-        return int1 + int2
-    }
+function madSum(int1 , int2){
+  if(int1 === int2){
+    let sum = int1 + int2
+    let newSum = sum * 3
+    return newSum
+  } else {
+    return int1 + int2
+  }
 }
-console.log(crazySum(2, 2))
+
+console.log(madSum(5, 5))
+
+
+// function crazySum(int1, int2) {
+//     if (int1 === int2) {
+//         return (int1 + int2) * 3
+//     } else {
+//         return int1 + int2
+//     }
+// }
+// console.log(crazySum(2, 2))
 
 
 /* EXERCISE 3
@@ -44,31 +56,48 @@ console.log(crazySum(2, 2))
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-const crazydiff = function (x) {
+
+ 
+  const crazydiff = function (x) {
     if (x > 19) {
-        return Math.abs(x - 19) * 3
+         return Math.abs(x - 19) * 3
     } else {
         return Math.abs(x - 19)
     }
 
-}
-console.log(crazydiff(20))
-console.log(crazydiff(18))
+  }
+  console.log(crazydiff(21))
+  console.log(crazydiff(18))
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-const boundry = function (n) {
-    if ((n > 20 && n <= 100) || n === 400) {
-        return true
-    } else {
-        return false
-    }
+function boundry(n){
+  if(n > 19 && n < 101){
+    return true
+  } else if (n === 400){
+    return true
+  } else {
+    return false
+  
 }
+}
+
+console.log(boundry(20))
+console.log(boundry(80))
 console.log(boundry(400))
-console.log(boundry(45))
-console.log(boundry(250))
+
+// const boundry = function (n) {
+//     if ((n > 20 && n <= 100) || n === 400) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(boundry(400))
+// console.log(boundry(45))
+// console.log(boundry(250))
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
@@ -78,85 +107,85 @@ console.log(boundry(250))
 
 
 
-function strivify(str) {
-    if (str.startsWith("Strive")) {
-        return str;
-    } else {
-        return "Strive " + str;
+// function strivify(str) {
+//     if (str.startsWith("Strive")) {
+//         return str;
+//     } else {
+//         return "Strive " + str;
 
-    }
+//     }
 
-}
-console.log(strivify("javaScript is cool"))
+// }
+// console.log(strivify("javaScript is cool"))
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
-function check3and7(n) {
-    if (n % 3 === 0 || n % 7 === 0) {
-        return "Is a multiple of 3 and 7", true
-    } else {
-        return "Is not a multiple of 3 or 7", false
-    }
+// function check3and7(n) {
+//     if (n % 3 === 0 || n % 7 === 0) {
+//         return "Is a multiple of 3 and 7", true
+//     } else {
+//         return "Is not a multiple of 3 or 7", false
+//     }
 
-}
-console.log(check3and7(15))
-console.log(check3and7(14))
-console.log(check3and7(13))
+// }
+// console.log(check3and7(15))
+// console.log(check3and7(14))
+// console.log(check3and7(13))
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-function reverseString(str) {
-    return str.split("").reverse().join("")
-}
-console.log(reverseString("Hello world"))
+// function reverseString(str) {
+//     return str.split("").reverse().join("")
+// }
+// console.log(reverseString("Hello world"))
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-const upperFirstPhrase = function (str) {
-    let words = str.split(" ")
-    let finalString = []
-    for (let i = 0; i < words.length; i++) {
-        let firstChar = words[i].charAt(0)
-        console.log(firstChar)
-        let uppercaseChar = firstChar.toUpperCase()
-        let cutString = words[i].slice(1)
-        let finalWord = uppercaseChar + cutString
-        finalString.push(finalWord)
-    }
-    console.log(finalString.join(" "))
-}
+// const upperFirstPhrase = function (str) {
+//     let words = str.split(" ")
+//     let finalString = []
+//     for (let i = 0; i < words.length; i++) {
+//         let firstChar = words[i].charAt(0)
+//         console.log(firstChar)
+//         let uppercaseChar = firstChar.toUpperCase()
+//         let cutString = words[i].slice(1)
+//         let finalWord = uppercaseChar + cutString
+//         finalString.push(finalWord)
+//     }
+//     console.log(finalString.join(" "))
+// }
 
-upperFirstPhrase("hello my name is raeven")
+// upperFirstPhrase("hello my name is raeven")
 
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-function cutString(str) {
-    return str.slice(1, -1)
-}
-console.log(cutString("hello world"))
+// function cutString(str) {
+//     return str.slice(1, -1)
+// }
+// console.log(cutString("hello world"))
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-function giveMeRandom(n) {
-    let numArr = []
-    for (let i = 0; i <= n; i++) {
-        let randomArr = Math.floor(Math.random() * 10)
-        numArr.push(randomArr)
-    }
-    return numArr
-}
-console.log(giveMeRandom(9))
+// function giveMeRandom(n) {
+//     let numArr = []
+//     for (let i = 0; i <= n; i++) {
+//         let randomArr = Math.floor(Math.random() * 10)
+//         numArr.push(randomArr)
+//     }
+//     return numArr
+// }
+// console.log(giveMeRandom(9))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow. */
