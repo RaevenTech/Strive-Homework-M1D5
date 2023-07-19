@@ -104,9 +104,13 @@ console.log(boundry(400))
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 function strivify(string){
-
+  if(string.startsWith("Strive")){
+    return string
+  }else {
+    return `Strive ${string}`
+  }
 }
-
+console.log(strivify("javascript is cool"))
 
 
 // function strivify(str) {
